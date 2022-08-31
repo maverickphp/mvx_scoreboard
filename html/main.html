@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div id="main" class="main">
+      <div class="keybindContainer">
+        <span class="keyboardKeybindsTitle noSelect"><i class="fa-solid fa-keyboard"></i> Keyboard Keybinds</span>
+        <div class="keyboardKeybinds noSelect" id="keyboardKeybinds"></div>
+      </div>
+      <div class="playerInfoContainer">
+        <span class="playerInfoTitle noSelect"><i class="fa-solid fa-user-gear"></i> Player Info</span>
+        <div class="playerInfo noSelect">
+          <span class="playerInfoEntry" id="playerName">- <i class="fa-solid fa-user-tag"></i></span>
+          <br>
+          <span class="playerInfoEntry" id="roleplayName">- <i class="fa-solid fa-id-card"></i></span>
+          <br>
+          <span class="playerInfoEntry" id="playTime">- <i class="fa-solid fa-clock"></i></span>
+          <br>
+          <span class="playerInfoEntry" id="playerID">- <i class="fa-solid fa-server"></i></span>
+        </div>
+      </div>
+      <div class="illegalActivitesContainer">
+        <span class="illegalActivitesTitle noSelect"><i class="fa-solid fa-person-rifle"></i> Illegal Activities</span>
+        <div class="illegalActivites noSelect" id="illegalActivites"></div>
+      </div>
+      <div id="tableBase" class="tableBase">
+        <span class="onlinePlayersTitle noSelect">Players</span>
+        <span class="onlinePlayers  noSelect" id="onlinePlayers">0 <i class="fa-solid fa-circle-dot  noSelect" style="color: #7CFC00;"></i></span>
+        <span class="onlineStaffTitle  noSelect">Staff</span>
+        <span class="onlineStaff noSelect" id="onlineStaff">0 <i class="fa-solid fa-clipboard-user noSelect" style="color: #5c5c5c;"></i></span>
+        <span class="onlinePoliceTitle noSelect">Police</span>
+        <span class="onlinePolice noSelect" id="onlinePolice">0 <i class="fa-solid fa-handcuffs noSelect" style="color: #3B9AE1;"></i></span>
+        <span class="onlineEMSTitle noSelect">EMS</span>
+        <span class="onlineEMS noSelect" id="onlineEMS">0 <i class="fa-solid fa-truck-medical noSelect" style="color: white;"></i></span>
+        <span class="onlinemechanicTitle noSelect">Mechanic</span>
+        <span class="onlinemechanic noSelect" id="onlinemechanic">0 <i class="fa-solid fa-toolbox noSelect" style="color: #cd8e52;"></i></span>
+        <span class="onlineTaxiTitle noSelect">Taxi</span>
+        <span class="onlineTaxi noSelect" id="onlineTaxi">0 <i class="fa-solid fa-taxi noSelect" style="color: #fdb813;"></i></span>
+        <table class="tableHeader">
+          <tr>
+            <th onclick="sortTableNumbers(0)" id="th1" class=" noSelect"><i class="fa-solid fa-id-badge" style="color: #E76F51;"></i> ID</th>
+            <th onclick="sortTableLetters(1)" id="th2" class=" noSelect"><i class="fa-solid fa-person" style="color: 3FD9FF;"></i> Name</th>
+            <th onclick="sortTableLetters(2)" id="th3" class=" noSelect"><i class="fa-solid fa-briefcase" style="color: 1F97E7;"></i> Job</th>
+            <th onclick="sortTableLetters(3)" id="th4" class=" noSelect"><i class="fa-solid fa-user-group" style="color: #5845B1;"></i> Group</th>
+          </tr>
+        </table>
+        <div id="tableContainer" class="tableContainer">
+          <table id="usersTable">
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
