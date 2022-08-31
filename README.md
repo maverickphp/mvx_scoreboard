@@ -8,7 +8,7 @@ Also you can sort the columns in alphabetical order or in numerical order.
 
 Make **pull-requests** if you want improve this script!
 
-**Preview:** https://streamable.com/o4w1ph
+
 
 **My Discord Server:** https://discord.gg/HctMr5Ug
 *I suggest joining as I am going to announce there any other new scripts that I am working on!*
